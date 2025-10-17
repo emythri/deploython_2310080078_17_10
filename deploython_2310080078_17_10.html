@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EELAPANTI MYTHRI | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #182848, #4b6cb7);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #34495e;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .about p {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .about .platform-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .about .platform-links a {
+      display: inline-block;
+      margin: 5px 10px;
+      color: #1abc9c;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .about .platform-links a:hover {
+      color: #16a085;
+      text-decoration: underline;
+    }
+
+    .education .edu-card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .education h3 {
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .skills li {
+      background: #1abc9c;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 20px;
+    }
+
+    .certifications .cert-card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .certifications a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    .projects .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background: #1abc9c;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact button:hover {
+      background: #16a085;
+    }
+
+    footer {
+      background: #182848;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #1abc9c;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #16a085;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EELAPANTI MYTHRI</h1>
+    <p>Student | Full Stack Developer | KL University</p>
+    <p>📍 Hyderabad, India<p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I’m <strong>Eelapanti Mythri</strong>, a passionate B.Tech student at Koneru Lakshmaiah University (KL University),
+      pursuing Artificial Intelligence and Data Science. I love learning new technologies, building full-stack applications and working with data bases.
+    </p>
+    <div class="platform-links">
+      <a href="https://www.linkedin.com/in/eelapanti-mythri-979943337/" target="_blank">LinkedIn</a>
+      <a href="https://www.codechef.com/users/emythri" target="_blank">CodeChef</a>
+      <a href="https://codeforces.com/profile/emythri" target="_blank">Codeforces</a>
+      <a href="https://leetcode.com/u/3DQBxrJEzh/" target="_blank">LeetCode</a>
+      <a href="https://www.hackerrank.com/profile/h2310080078" target="_blank">HackerRank</a>
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <h3>B.Tech - KL University (2023–2027)</h3>
+      <p>CGPA: 9.3 (as of 2nd year 2nd semester)</p>
+    </div>
+    <div class="edu-card">
+      <h3>Intermediate - TSBIE (2021–2023)</h3>
+      <p>Percentage: 94.4%</p>
+    </div>
+    <div class="edu-card">
+      <h3>Class X - CBSE (2021)</h3>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Full Stack Development</li>
+      <li>Django (Python)</li>
+      <li>MERN Stack</li>
+      <li>HTML & CSS</li>
+      <li>C Language</li>
+      <li>Java</li>
+      <li>MySQL & MongoDB</li>
+      <li>Python</li>
+      <li>Power BI & Tableau</li>
+    </ul>
+  </section>
+
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-card">
+      <h3>GitHub Foundations</h3>
+      <p>Issued by GitHub (Dec 2024 – Dec 2027)</p>
+      <a href="https://www.credly.com/go/vbEDrkp2" target="_blank">Verify Certificate</a>
+    </div>
+    <div class="cert-card">
+      <h3>Introduction to Machine Learning</h3>
+      <p>Issued by NPTEL (Oct 2024)</p>
+      <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs101/Course/NPTELZ4CS101565020094503850790.pdf" target="_blank">Verify Certificate</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Spam Email Detection</h3>
+        <p>Project done as part of Data Analytics course with Teachnook & Cognizance IIT Roorkee.</p>
+        <a href="https://cert.diceld.com/cid/18wqSx048r7verify-true" target="_blank">Verify Certificate</a>
+      </div>
+      <div class="project-card">
+        <h3>Connect-Hub</h3>
+        <p>A chatting application built using MERN stack with authentication, group chat, and messaging.</p>
+        <a href="https://connect-hub-web-2.onrender.com/" target="_blank">Visit Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 EELAPANTI MYTHRI | All Rights Reserved</p>
+    <p>
+      <a href="https://www.linkedin.com/in/eelapanti-mythri-979943337/" target="_blank">LinkedIn</a> |
+      <a href="https://www.codechef.com/users/emvthri" target="_blank">CodeChef</a> |
+      <a href="https://codeforces.com/profile/emythri" target="_blank">Codeforces</a> |
+      <a href="https://leetcode.com/u/3DQBxrJEzh/" target="_blank">LeetCode</a> |
+      <a href="https://www.hackerrank.com/profile/12310080078" target="_blank">HackerRank</a>
+    </p>
+  </footer>
+</body>
+</html>
